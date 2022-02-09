@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background : linear-gradient(#00bf8f, #001510);
+    margin: 0;
+    padding: 0;
+}
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 49%;
+    width: 23%;
+    transform: translate(-50%, -50%);
+    background: #29b48d;
+    box-shadow: 5px 15px 25px #031f17;
+    border-radius: 10px;
+    transition: 2.5s;
+    padding: 0 0 0 15px;
+}
+.box:hover{
+    background: #028060;
+    box-shadow: 5px 12px 18px rgb(248, 248, 248);
+}
+.login {
+    text-align: center;
+    padding: 30px 30px 0px 30px;
+    border: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: #001510;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+}
+#form {
+    padding-left: 5px;
+}
+#user, 
+#pass {
+    position: relative;
+    color: #084735;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 3px 0 3px;
+    font-size: larger;
+    font-weight: bold;
+    transition: .5s;
+}
+.username input, 
+.password input{
+    position: relative;
+    width: 180px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    font-size: large;
+    border: none;
+    border-bottom: 2px dashed #084735;
+    background: transparent;
+    outline: none;
+}
+button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 12px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    margin-left: 108px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: #fff;
+    overflow: hidden;
+    transition: 0.78s;
+    letter-spacing: 3px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+button:hover {
+    background: #d5eb75;
+    color: #38806e;
+    font-weight: bold;
+    box-shadow: 0 0 150px #c7e24c,
+    0 0 25px #c7e24c,
+    0 0 50px #c7e24c,
+    0 0 100px #c7e24c;
+}
+button span{
+    position: absolute;
+    display: block;
+}
+#one {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #d5eb75);
+    animation: anim1 1s linear infinite; 
+} 
+ @keyframes anim1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}  
+#two {
+    top: 0;
+    right: 0%;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #d5eb75);
+    animation: anim2 1s linear infinite; 
+    animation-delay: .25s
+} 
+@keyframes anim2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+#three {
+    bottom: 0%;
+    left: 100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, #d5eb75);
+    animation: anim3 1s linear infinite; 
+    animation-delay: .5s
+} 
+ @keyframes anim3 {
+    0% {
+        left: 100%;
+    }
+    50%, 100%{
+        left: -100%;
+    }
+} 
+#four {
+    bottom: 0;
+    left: 0%;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #d5eb75);
+    animation: anim4 1s linear infinite; 
+    animation-delay: .75s
+} 
+@keyframes anim4 {
+    0% {
+        top: 100%;
+    }
+    50%, 100%{
+        top: -100%;
+    }
+}
+a {
+    position: relative;
+    padding: 5px 77px 5px;
+    font-size: 12px;
+    background-color: transparent;
+    border: none;
+    color: #c7e9d5;
+    overflow: hidden;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a:hover {
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 10px #ffffff;
+    padding: 5px 73px 5px;
+}
